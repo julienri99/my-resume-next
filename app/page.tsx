@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <main className="pt-10 flex flex-col items-center text-center px-4">
 
-      <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-8 animate-fade-in">
-        About Me
-      </h1>
+
 
       <div className="max-w-2xl p-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg shadow-lg transition duration-300 hover:shadow-xl hover:scale-[1.02] animate-slide-up">
-
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent bg-clip-text mb-8 animate-fade-in">
+          About Me
+        </h1>
         <Image
           className="rounded-lg mx-auto transition-transform duration-300 hover:scale-105"
           src={testImg}
