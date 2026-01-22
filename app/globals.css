@@ -1,8 +1,12 @@
 @import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font:-geist-sans: 'Geist Sans', sans-serif;
 }
 
 @theme inline {
@@ -12,15 +16,58 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font: var(--font-geist-sans);
+}
+.nav-menu {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.hover-underline {
+  font-size: 1.4rem;
+  color: var(--foreground);
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.hover-underline:hover {
+  color: #00c6ff;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #171717, #00eaff);
+  bottom: -6px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .35s ease-out;
+}
+
+.hover-underline::before {
+  top: -6px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
 }
