@@ -10,7 +10,7 @@ export default function Hero() {
             />
             <h1 className="text-4xl font-bold mb-2">Hi, I'm Julien Riviere 👋</h1>
             <p className="text-xl text-gray-600 max-w-md">
-                Full-Stack Developer passionate about crafting modern web experiences.
+                Front-End Developer passionate about crafting modern web experiences.
             </p>
             <div className="mt-6 flex gap-4">
                 <a href="https://www.facebook.com/shueza007xxx/" target="_blank" className="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
