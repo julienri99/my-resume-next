@@ -16,7 +16,7 @@ export default function Hero() {
                 <a href="https://www.facebook.com/shueza007xxx/" target="_blank" className="px-5 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
                     Contact Me
                 </a>
-                <a href="https://github.com/" target="_blank" className="px-5 py-2 rounded-full border border-gray-700 hover:bg-gray-100 transition">
+                <a href="https://github.com/julienri99/" target="_blank" className="px-5 py-2 rounded-full border border-gray-700 hover:bg-gray-100 transition">
                     View Projects
                 </a>
             </div>
